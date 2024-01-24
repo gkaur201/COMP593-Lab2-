@@ -12,6 +12,10 @@ def main():
     }
 
     # TODO: Step 3 - Add another movie to the data structure
+    new_movie = {"tittle": "anchorman", "genre": "comedy"}
+    about_me["movies"].append(new_movie)
+
+    print_student_name_and_id(about_me)
     
 # TODO: Step 4 - Function that prints student name and ID	
 def print_student_name_and_id(about_me):
