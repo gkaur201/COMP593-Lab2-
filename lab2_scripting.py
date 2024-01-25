@@ -43,6 +43,10 @@ def add_pizza_toppings_simple(about_me, *new_toppings):
 
 # TODO: Step 6 - Function that prints bullet list of pizza toppings
 def print_pizza_toppings(about_me):
+    print(f"My favourite pizza toppings are:"Onions")
+    for topping in  ['pizza_toppings']:
+        print(f"- {topping}")
+    print()
     return
 
 # TODO: Step 7 - Function that prints comma-separated list of movie genres
