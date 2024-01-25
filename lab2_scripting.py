@@ -29,11 +29,15 @@ def print_student_name_and_id(about_me):
     
 # TODO: Step 5 - Function that adds pizza toppings to data structure
 def add_pizza_toppings(about_me, toppings):
-    about_me["pizza_toppings"].append("crons", "greenpappers")
-    about_me["pizza_toppings"].sorted(add_pizza_toppings)
-    print(
-        f"\npizza_toppings"
-        )
+    add_pizza_toppings_simple(about_me, 'Cheese', 'tomotao')
+
+    print_pizza_toppings("pizza_toppings")
+    print_movie_genres("movies")
+    print_movie_titles(about_me['movies'])
+
+def add_pizza_toppings_simple(about_me, *new_toppings):
+    about_me['pizza_toppings'].extend(new_toppings)
+    about_me['pizza_toppings'] = sorted(about_me['pizza_toppings'])
 
     return
 
@@ -48,6 +52,6 @@ def print_movie_genres(about_me):
 # TODO: Step 8 - Function that prints comma-separated list of movie titles
 def print_movie_titles(movie_list):
     return
-    
+     
 if __name__ == '__main__':
     main()
